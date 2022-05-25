@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  color: #bced09;
+  background-color: #2f52e0;
+  font-family: "Pacifico", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 97vh;
+  transition: 0.5s;
+  margin: 0 0 10px;
+}
+h1 {
+  margin-bottom: 30px;
+}
+#h1 {
+  font-size: 40px;
+}
+#p {
+  font-size: 25px;
+}
+.header {
+  padding-bottom: 20px;
+  line-height: 14px;
+}
+.areaAll {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 75%;
+}
+.score-container-1,
+.score-container-2 {
+  color: #f9cb40;
+  background-color: #1b1e2b;
+  border-radius: 10px;
+  width: 300px;
+  padding: 15px;
+  margin: 0px;
+  font-size: 25px;
+}
+#namePlayer1,
+#namePlayer2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-size: 25px;
+}
+#areaPlayer1,
+#areaPlayer2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ff715b;
+  padding: 30px 0;
+  width: 42%;
+}
+.areaDice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+}
+#rollText1,
+#rollText2 {
+  font-size: 25px;
+  font-family: "Pacifico", cursive;
+  width: 200px;
+}
+.image-container-1,
+.image-container-2 {
+  display: none;
+  background-color: #1b1e2b;
+  border-radius: 10%;
+  padding: 15px;
+  margin: 15px;
+  width: 300px;
+}
+#imagePlayer1,
+#imagePlayer2 {
+  width: 100%;
+  height: auto;
+}
+#playAgain1,
+#playAgain2 {
+  display: none;
+  width: 100%;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+}
+button {
+  color: #f9cb40;
+  background-color: #4c5b5c;
+  font-size: 18px;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 30px;
+  width: 45%;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #10121a;
+}
+
+@media all and (max-width: 1024px) {
+  .areaAll {
+    height: 70%;
+  }
+  .header {
+    width: 80%;
+    line-height: 16px;
+  }
+  .score-container-1,
+  .score-container-2 {
+    width: 250px;
+  }
+  .image-container-1,
+  .image-container-2 {
+    border-radius: 10%;
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #areaPlayer1,
+  #areaPlayer2 {
+    padding: 30px 0 15px;
+  }
+  .score-container-1,
+  .score-container-2 {
+    width: 80%;
+    padding: 15px;
+    margin: 0px;
+  }
+  #rollText1,
+  #rollText2 {
+    font-size: 22px;
+    font-weight: 600;
+    width: 150px;
+  }
+  .image-container-1,
+  .image-container-2 {
+    border-radius: 60px;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .buttons {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+  }
+  button {
+    padding: 15px 0;
+    margin: 7px 0;
+    width: 100%;
+  }
+  #playAgain1,
+  #playAgain2 {
+    padding: 40px 0;
+  }
+}
