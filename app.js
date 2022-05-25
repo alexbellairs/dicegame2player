@@ -108,7 +108,7 @@ rollPlayer1.addEventListener("click", () => {
     player1Total += currentRoll;
     scorePlayer1.textContent = player1Total;
 
-    if (player1Total >= 40) {
+    if (player1Total >= 30) {
       // PLAYER 1 WINS
       body.style.backgroundColor = "#161822";
       winPlayer1();
@@ -141,7 +141,7 @@ rollPlayer2.addEventListener("click", () => {
     player2Total += currentRoll;
     scorePlayer2.textContent = player2Total;
 
-    if (player2Total >= 40) {
+    if (player2Total >= 30) {
       // PLAYER 2 WINS
       body.style.backgroundColor = "#161822";
       winPlayer2();
